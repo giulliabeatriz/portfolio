@@ -20,12 +20,26 @@ nav {
 }
 
 .toggle-icon {
-    width: 45px;
     cursor: pointer;
-    background-color: #ccc;    
+    background-color: #b8b8b8;    
 }
 
 .dark .navbar  {
     background-color: #000;
     color: #fff;
+}
+
+.toggle-icon > img {
+    width: 30px;
+    padding: 2px;    
+}
+
+.toggle-icon:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.toggle-icon:hover {
+    transition: .2s all ease-in-out;
+  background-color: #807f7f;
 }
