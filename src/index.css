@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  --white: #fff;
+  --black: #000;
+  --grey: #b8b8b8;
 }
 
 .container {
