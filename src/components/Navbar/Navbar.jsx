@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import profile from '../../assets/navbar/profile.jpg'
 import ti_light from '../../assets/navbar/toggle-icon-light.png'
 import ti_dark from '../../assets/navbar/toggle-icon-dark.png'
-
+import { Link } from 'react-router-dom';
 
 const Navbar = ({theme, setTheme}) => {
 
@@ -23,10 +23,10 @@ const Navbar = ({theme, setTheme}) => {
           </span>
 
             <ul className="text-center m-0 col-lg-4">
-              <li>Home</li>
-              <li>Sobre</li>
-              <li>Projetos</li>
-              <li>Contato</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/sobre">Sobre</Link></li>
+              <li><Link to="/projetos">Projetos</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
             </ul>
 
             <button onClick={toggle_mode} aria-label='Alternar tema' className='toggle-icon rounded-circle p-2 border'>
