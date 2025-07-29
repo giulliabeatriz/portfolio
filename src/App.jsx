@@ -1,34 +1,33 @@
-import React, { useState } from 'react'
-import Navbar from './components/Navbar/navbar'
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
-import Sobre from './components/Pages/Sobre.jsx';
-import Projetos from './components/Pages/Projetos.jsx';
-import Home from './components/Pages/Home.jsx';
-import Contato from './components/Pages/Contato.jsx';
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar/navbar';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Pages/Home';
+import Sobre from './components/Pages/Sobre';
+import Projetos from './components/Pages/Projetos';
+import Contato from './components/Pages/Contato';
 
-function App(){
-  
-<BrowserRouter>
-  <Router>
-    <Navbar/>
-    <main>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/sobre' element={<Sobre/>}></Route>    
-        <Route path='/projetos' element={<Projetos/>}></Route>    
-        <Route path='/contato' element={<Contato/>}></Route>    
-        <Route path='/*' element={<div><h1>Not Found</h1></div>}></Route>    {/* qnd o usuário cair em uma página q n existe*/}
-      </Routes>
-    </main>
-  </Router>
-</BrowserRouter>
+function App() {
+   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
-const [theme, setTheme] = useState('light');
-return (
-      <div className={`container ${theme}`}>
-        <Navbar theme={theme} setTheme ={setTheme}/>
-      </div>
-    )
+ useEffect(() => {  
+     document.documentElement.classList.toggle('dark', theme === 'dark');
+     localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  return (
+    <div className="min-h-screen font-sans container dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <Navbar theme={theme} setTheme={setTheme} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="*" element={<div><h1>Página não encontrada</h1></div>} />
+        </Routes>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
