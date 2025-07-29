@@ -11,7 +11,7 @@ const Navbar = ({theme, setTheme}) => {
   const toggle_mode = ()=> {
     theme == 'light' ? setTheme('dark') : setTheme('light');
     console.log('clicked');
-  }
+    }
 
   return (
     <div className='py-2 align-items-center'>
@@ -23,10 +23,10 @@ const Navbar = ({theme, setTheme}) => {
           </span>
 
             <ul className="text-center m-0 col-lg-4">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/sobre">Sobre</Link></li>
-              <li><Link to="/projetos">Projetos</Link></li>
-              <li><Link to="/contato">Contato</Link></li>
+              <li><Link to="/" className='font-heading text-gray-700 dark:text-gray-300'>Home</Link></li>
+              <li><Link to="/sobre" className='font-heading text-gray-700 dark:text-gray-300'>Sobre</Link></li>
+              <li><Link to="/projetos" className='font-heading text-gray-700 dark:text-gray-300'>Projetos</Link></li>
+              <li><Link to="/contato" className='font-heading text-gray-700 dark:text-gray-300'>Contato</Link></li>
             </ul>
 
             <button onClick={toggle_mode} aria-label='Alternar tema' className='toggle-icon rounded-circle p-2 border'>
