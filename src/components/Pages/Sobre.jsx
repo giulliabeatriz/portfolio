@@ -15,19 +15,13 @@ const Sobre = () => {
         />
         
         <p className="mt-2 mb-4">
-          Aqui você escreve o primeiro parágrafo da sua biografia. O texto irá 
-          automaticamente contornar a forma da imagem que está flutuando à esquerda,
-          graças à mágica do CSS shape-outside que vamos definir a seguir.
+          teste
         </p>
         <p className="mb-4">
-          Este é o segundo parágrafo. Continue escrevendo sobre suas paixões, 
-          habilidades e experiências. Note como o fluxo do texto é natural e se 
-          adapta perfeitamente à sua silhueta, criando um layout muito mais 
-          interessante e profissional do que um simples quadrado.
+          teste
         </p>
         <p>
-          Você pode adicionar quantos parágrafos forem necessários, e eles continuarão
-          a seguir o contorno definido pela imagem.
+          teste
         </p>
       </div>
     </div>
