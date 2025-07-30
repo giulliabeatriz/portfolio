@@ -15,7 +15,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen font-sans container dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="min-h-screen font-sans dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <Navbar theme={theme} setTheme={setTheme} />
       <main>
         <Routes>
