@@ -21,7 +21,7 @@ const Navbar = ({theme, setTheme}) => {
 
         <span className='flex items-center gap-3'>
           <img src={profile} alt="Foto de perfil" className='profile w-12 h-12 rounded-full' />
-          <p className="m-0 text-secondary-dark dark:text-white font-heading text-lg hidden sm:block">Giullia Beatriz</p>
+          <p className="m-0 text-primary-dark dark:text-white font-heading text-lg hidden sm:block">Giullia Beatriz</p>
         </span>
 
         <ul className="flex items-center font-sans justify-center gap-4 sm:gap-8 m-0">
