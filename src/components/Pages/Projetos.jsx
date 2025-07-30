@@ -4,12 +4,16 @@ import projetos from "../../data/projetos";
 
 const Projetos = () => {
   return (
-    <div className="p-6 space-y-10 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-heading font-bold text-center dark:text-primary-light text-primary-dark mb-6">Meus Projetos</h1>
-      {projetos.map((proj, index) => (
+     <section className="py-16 px-4">
+      <div className="text-center mb-12">
+        <h1 className="font-heading text-5xl mb-12 dark:text-primary-light text-primary">Meus Projetos</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mx-6 w-7xl mx-auto">
+        {projetos.map((proj, index) => (
         <ProjetoCard key={index} {...proj} />
-      ))}
+      ))} </div>
     </div>
+    </section>
   );
 };
 
