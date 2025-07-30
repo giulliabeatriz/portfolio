@@ -13,11 +13,13 @@ const ProjetoCard = ({
   tecnologias,
   data,
   imagens,
+  curiosidade,
   link,
+  tituloLink,
 }) => {
   return (
     <div className="card-proj dark:bg-gray-800 p-6 rounded-2xl shadow-lg space-y-6">
-      <h2 className="text-2xl font-bold text-yellow-800 mb-2">{titulo}</h2>
+      <h2 className="text-2xl font-bold text-center text-primary dark:text-primary-light mb-2">{titulo}</h2>
 
       <p className="text-gray-700 dark:text-gray-300 font-sans">
         <strong>Objetivo:</strong>
@@ -30,6 +32,11 @@ const ProjetoCard = ({
       <p className="text-gray-700 dark:text-gray-300">
         <strong className="">Desenvolvimento:</strong>
         <span className="font-corpo"> {data}</span>
+      </p>
+
+      <p className="text-gray-700 dark:text-gray-300">
+        <strong className="">Curiosidade:</strong>
+        <span className="font-corpo"> {curiosidade}</span>
       </p>
 
       <p className="text-gray-700 dark:text-gray-300">
@@ -65,7 +72,7 @@ const ProjetoCard = ({
           rel="noopener noreferrer"
           className="flex justify-center items-stretch bg-yellow-600 hover:bg-yellow-700 text-white rounded-full px-4 py-2"
         >
-          <span className="no-underline">🔗 </span>Acessar o aplicativo
+          <span className="no-underline">🔗 </span>{tituloLink}
         </a>
       )}
     </div>
