@@ -1,10 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import './ProjetoCard.css'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./ProjetoCard.css";
 
 const ProjetoCard = ({
   titulo,
@@ -12,23 +12,32 @@ const ProjetoCard = ({
   descricao,
   tecnologias,
   data,
-  curso,
   imagens,
-  link
+  link,
 }) => {
   return (
     <div className="card-proj dark:bg-gray-800 p-6 rounded-2xl shadow-lg space-y-6">
       <h2 className="text-2xl font-bold text-yellow-800 mb-2">{titulo}</h2>
-      <p className="text-gray-700 dark:text-gray-300"><strong>Objetivo:</strong> {objetivo}</p>
-      <p className="text-gray-700 dark:text-gray-300">{descricao}</p>
 
-      <ul className="text-gray-700 dark:text-gray-300 list-disc list-inside">
-        <li><strong>Desenvolvimento:</strong> {data}</li>
-        <li><strong>Curso:</strong> {curso}</li>
-        <li><strong>Tecnologias/Ferramentas:</strong> {tecnologias}</li>
-      </ul>
+      <p className="text-gray-700 dark:text-gray-300 font-sans">
+        <strong>Objetivo:</strong>
+        <span className="font-corpo"> {objetivo}</span>
+      </p>
+      <p className="text-gray-700 dark:text-gray-300 font-sans">
+        <span className="font-corpo"> {descricao}</span>
+      </p>
 
-       {imagens && imagens.length > 0 && (
+      <p className="text-gray-700 dark:text-gray-300">
+        <strong className="">Desenvolvimento:</strong>
+        <span className="font-corpo"> {data}</span>
+      </p>
+
+      <p className="text-gray-700 dark:text-gray-300">
+        <strong className="">Tecnologias/Ferramentas:</strong>
+        <span className="font-corpo"> {tecnologias}</span>
+      </p>
+
+      {imagens && imagens.length > 0 && (
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
@@ -54,9 +63,9 @@ const ProjetoCard = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-yellow-600 hover:bg-yellow-700 text-white rounded-full px-6 py-2 mt-4"
+          className="flex justify-center items-stretch bg-yellow-600 hover:bg-yellow-700 text-white rounded-full px-4 py-2"
         >
-          🔗 Acessar o aplicativo
+          <span className="no-underline">🔗 </span>Acessar o aplicativo
         </a>
       )}
     </div>
