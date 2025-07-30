@@ -5,7 +5,7 @@ const projetos = [
     descricao:
       "O 'Vivendo de Freela' foi criado na plataforma Adalo com o intuito de conectar freelancers e clientes. Conta com funcionalidades como login, feed de projetos, favoritos, chat, criação de posts e edição de perfil. O design segue boas práticas de UX/UI, com aplicação de conceitos estudados na disciplina de Sistemas Multimídia.",
     tecnologias: "Adalo (no-code), UX/UI Design, Colorimetria, Acessibilidade",
-    data: "Agosto de 2024",
+    data: "Agosto de 2024 - desenvolvido para a matéria de Sistemas Multimídias na graduação de Sistemas de Informação -- UFMT",
     curso: "Sistemas de Informação – UFMT",
     imagens: [
       "/images/VivendoDeFreela/freela1.png",
