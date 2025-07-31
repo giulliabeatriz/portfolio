@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.7",
     "react": "^19.1.0",
@@ -44,12 +46,5 @@
     },
     "bail": 20,
     "verbose": true
-=======
-    "@fortawesome/free-solid-svg-icons": "^7.0.0",
-    "@fortawesome/react-fontawesome": "^0.2.3",
-    "@vitejs/plugin-react": "^4.7.0",
-    "react": "^19.1.1",
-    "vite": "^7.0.6"
->>>>>>> 4b95c4e13c08a0ea1ee4976cff2ed4bd0f00e223
   }
 }
