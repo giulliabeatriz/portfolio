@@ -23,25 +23,25 @@ const ProjetoCard = ({
 
       <p className="text-gray-700 dark:text-gray-300 font-sans">
         <strong>Objetivo:</strong>
-        <span className="font-corpo"> {objetivo}</span>
+        <span> {objetivo}</span>
       </p>
       <p className="text-gray-700 dark:text-gray-300 font-sans">
-        <span className="font-corpo"> {descricao}</span>
+        <span> {descricao}</span>
       </p>
 
       <p className="text-gray-700 dark:text-gray-300">
         <strong className="">Desenvolvimento:</strong>
-        <span className="font-corpo"> {data}</span>
+        <span> {data}</span>
       </p>
 
       <p className="text-gray-700 dark:text-gray-300">
         <strong className="">Curiosidade:</strong>
-        <span className="font-corpo"> {curiosidade}</span>
+        <span> {curiosidade}</span>
       </p>
 
       <p className="text-gray-700 dark:text-gray-300">
         <strong className="">Tecnologias/Ferramentas:</strong>
-        <span className="font-corpo"> {tecnologias}</span>
+        <span> {tecnologias}</span>
       </p>
 
       {imagens && imagens.length > 0 && (
