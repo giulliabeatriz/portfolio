@@ -1,0 +1,22 @@
+.card-proj {
+    background-color: #f0f8ff;    
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white; 
+  background-image: none !important; 
+  border-radius: 50%; 
+  width: 44px; 
+  height: 44px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-family: 'swiper-icons'; 
+  font-size: 18px; 
+  font-weight: 800;
+  color: #4F378B; 
+}

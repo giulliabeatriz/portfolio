@@ -1,0 +1,4 @@
+.shape-image {
+  shape-outside: url('../../../public/images/img-colacao.png'); 
+  shape-margin: 1.5rem; 
+}
