@@ -1,35 +1,50 @@
 import React from 'react';
 import imgColacao from '../../../public/images/img-colacao.png';
+import TecnologiasSwiper from '../../components/TecnologiasSwiper/TecnologiasSwiper'; // Importe o novo componente
 import './sobre.css';
 
 const Sobre = () => {
   return (
     <div className="p-8 md:p-16">
-      <h1 className="font-heading text-center text-5xl dark:text-primary-light text-primary mb-8">Sobre Mim</h1>
+      <h1 className="font-heading text-center text-5xl dark:text-primary-light text-primary mb-8">Criando experiências digitais com propósito!</h1>
 
-      <div className="text-lg items-start border justify-center text-secondary-dark dark:text-secondary-light">
-        <img 
-          src={imgColacao} 
-          alt="Giullia Beatriz" 
-          className="float-left w-1/2 md:w-1/3 mr-6 h-auto shape-image" 
+      <div className="text-lg items-start justify-center text-secondary-dark dark:text-secondary-light">
+        <img
+          src={imgColacao}
+          alt="Giullia Beatriz"
+          className="float-left w-1/2 md:w-1/3 mr-6 h-auto shape-image"
         />
-        
-        <p className="mt-2 mb-1">
-          Olá, eu sou a Giullia! 👋 
-        </p>
-        <p className="mb-6 font-corpo">
-          Tenho 21 anos e sou Bacharel em Sistemas de Informação pela Universidade Federal de Mato Grosso (UFMT). 
-          Sou natural de Cuiabá-MT (de chapa e cruz!) e uma das minhas características mais imperceptíveis é que sou Corinthiana roxa e amo escutar música, principalmente o gênero rap/hip-hop e as suas vertentes. 
-          Sou movida pela curiosidade e pelo desejo constante de aprender, sendo apaixonada por criar experiências digitais que realmente façam a diferença. 
-        </p>
-        <p className="mb-2 font-xl font-bold mb-0 text-primary">
-          Front-End Development x Ux/Ui Design
+
+        <section>
+          <p className="mt-16 text-primary-dark text-2xl mb-1">
+            Olá, eu sou a Giullia! 👋
+          </p>
+          <p className="mb-6 font-corpo">
+            Tenho 21 anos e sou Bacharel em Sistemas de Informação pela Universidade Federal de Mato Grosso (UFMT).
+            Sou uma UX/UI Designer e Desenvolvedora Front-End apaixonada por transformar ideias complexas em experiências digitais intuitivas, acessíveis e visualmente cativantes.
+            Meu objetivo é criar pontes entre as necessidades dos usuários e os objetivos de negócio, utilizando um design centrado no ser humano e um código limpo e eficiente.
+          </p>
+
+        </section>
+
+        <p className="mb-2 text-2xl font-bold mb-0 font-heading text-primary">
+          MAS POR QUÊ?
         </p>
         <p className="mb-4 font-corpo">
-          Eu conheci o desenvolvimento front-end no quinto semestre da faculdade e me apaixonei. Logo, iniciei meu estágio na área e me mantive por quase dois anos. Mas, ao final da faculdade, pronta para enfrentar meu TCC, me questionei a mesma coisa que todo estudante pensa: "Qual tema eu escolho?". 
-          Após muitos pensamentos conturbantes, decidi me arriscar em uma nova área: o Ux/Ui! Meu tema foi "Refinamento da experiência do usuário no Portal do Conhecimento: aplicação  de metodologias "
+          Acredito que um <span className="text-primary font-bold">bom design</span> começa com a empatia. Mergulho para entender o comportamento e as insatisfações do usuário.
+          Para mim, construir uma interface de sucesso não se baseia apenas na estética, mas também em sua utilidade e funcionalidade.
         </p>
+        <p className="mb-4 font-corpo"> No front-end, minha missão é dar vida a essa visão com precisão e performance. Valorizo código semântico, escalável, responsivo e que garanta que a experiência projetada seja entregue perfeitamente para todos os utilizadores.
+          Acredito que a colaboração entre <span className="text-primary font-bold">design e desenvolvimento </span>é a chave para criar não somente produtos, mas experiências.</p>
       </div>
+
+      <section className=" mt-16">
+        <h2 className="font-heading text-2xl font-bold text-primary mb-4">Habilidades & Ferramentas</h2>
+        <p className="font-sans text-lg text-secondary-dark dark:text-secondary-light mx-auto">
+          Estas são algumas das tecnologias que utilizo para transformar ideias em realidade.
+        </p>
+        <TecnologiasSwiper />
+      </section>
     </div>
   );
 };
