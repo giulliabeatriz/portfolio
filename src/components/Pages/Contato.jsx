@@ -3,7 +3,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Contato = () => {
   // Estilos reutilizáveis para os inputs, para manter o código limpo
@@ -33,31 +33,34 @@ const Contato = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <a href="mailto:giulliabeatrizrsilva@gmail.com" className="flex items-center gap-4 group">
+            <div className="space-y-4 grid-col-3">
+              <a href="mailto:giulliabeatrizrsilva@gmail.com" className="flex items-center gap-4 group flex-col">
                 <FontAwesomeIcon icon={faEnvelope} className="text-primary text-xl" />
-                <span className="font-sans text-secondary-dark dark:text-white group-hover:text-primary transition-colors">seu-email@exemplo.com</span>
+                <span className="font-sans text-secondary-dark dark:text-white group-hover:text-primary transition-colors">E-mail</span>
               </a>
-              <a href="https://linkedin.com/in/giullia-beatriz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://linkedin.com/in/giullia-beatriz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group flex-col">
                 <FontAwesomeIcon icon={faLinkedin} className="text-primary text-xl" />
                 <span className="font-sans text-secondary-dark dark:text-white group-hover:text-primary transition-colors">LinkedIn</span>
               </a>
-              <a href="https://github.com/giulliabeatriz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://github.com/giulliabeatriz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group flex-col">
                 <FontAwesomeIcon icon={faGithub} className="text-primary text-xl" />
                 <span className="font-sans text-secondary-dark dark:text-white group-hover:text-primary transition-colors">GitHub</span>
               </a>
-              <a href="https://www.instagram.com/giullia.brs/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://www.instagram.com/giullia.brs/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group flex-col">
                 <FontAwesomeIcon icon={faInstagram} className="text-primary text-xl" />
                 <span className="font-sans text-secondary-dark dark:text-white group-hover:text-primary transition-colors">Instagram</span>
               </a>
-              <div className="flex items-center gap-4">
+              <a href="https://wa.link/hun4gq" className="flex items-center gap-4 flex-col">
+                <FontAwesomeIcon icon={faWhatsapp} className="text-primary text-xl" />
+                <span className="font-sans text-secondary-dark dark:text-white">Whatsapp</span>
+              </a>
+              <div className="flex items-center gap-4 flex-col">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary text-xl" />
                 <span className="font-sans text-secondary-dark dark:text-white">Cuiabá, MT, Brasil</span>
-              </div>
+              </div>              
             </div>
           </div>
 
-          {/* --- Coluna da Direita (Formulário) --- */}
           <div>
             <form action="https://formspree.io/f/SUA_URL_UNICA" method="POST" className="space-y-6">
               <div>
