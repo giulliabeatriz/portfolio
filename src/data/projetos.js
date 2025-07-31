@@ -28,14 +28,12 @@ const projetos = [
     tecnologias: "Adalo (no-code), UX/UI Design, Colorimetria, Acessibilidade",
     data: "Agosto de 2024 - desenvolvido para a matéria de Sistemas Multimídias na graduação de Sistemas de Informação -- UFMT",
     imagens: [
-      "/images/VivendoDeFreela/freela1.png",
-      "/images/VivendoDeFreela/freela2.png",
-      "/images/VivendoDeFreela/freela3.png",
-      "/images/VivendoDeFreela/freela4.png",
-      "/images/VivendoDeFreela/freela5.png",
-      "/images/VivendoDeFreela/freela6.png",
-      "/images/VivendoDeFreela/freela7.png",
-      "/images/VivendoDeFreela/freela8.png"
+      "/images/calculadoraDifal/calc1.jpeg",
+      "/images/calculadoraDifal/calc3.png",
+      "/images/calculadoraDifal/calc4.png",
+      "/images/calculadoraDifal/calc5.jpeg",
+      "/images/calculadoraDifal/calc5.png",
+      "/images/calculadoraDifal/calc6.png",      
     ],
     link: "https://giullia-silvas-team.adalo.com/social-media-app",
     tituloLink: "Acesse o aplicativo"
