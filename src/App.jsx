@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar/navbar.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Pages/Home.jsx';
 import Sobre from './components/Pages/Sobre.jsx';
