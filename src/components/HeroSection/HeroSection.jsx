@@ -11,9 +11,9 @@ const DownloadIcon = () => (
 
 const HeroSection = () => {
   return (
-     <section className="flex items-center justify-center min-h-[calc(100vh-theme(spacing.28))] px-4">
+     <section className="flex items-center justify-center px-4">
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center min-h-[calc(80vh-theme(spacing.28))] justify-center gap-10 md:gap-16">
 
           <div className="flex-shrink-0">
             <img
