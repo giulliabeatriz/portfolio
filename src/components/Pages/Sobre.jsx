@@ -27,7 +27,7 @@ const Sobre = () => {
 
         </section>
 
-        <p className="mb-2 text-2xl font-bold mb-0 font-heading text-primary">
+        <p className="mb-2 mt-4 text-2xl font-bold font-heading text-primary">
           MAS POR QUÊ?
         </p>
         <p className="mb-4 font-corpo">
@@ -38,13 +38,7 @@ const Sobre = () => {
           Acredito que a colaboração entre <span className="text-primary font-bold">design e desenvolvimento </span>é a chave para criar não somente produtos, mas experiências.</p>
       </div>
 
-      <section className=" mt-16">
-        <h2 className="font-heading text-2xl font-bold text-primary mb-4">Habilidades & Ferramentas</h2>
-        <p className="font-sans text-lg text-secondary-dark dark:text-secondary-light mx-auto">
-          Estas são algumas das tecnologias que utilizo para transformar ideias em realidade.
-        </p>
         <TecnologiasSwiper />
-      </section>
     </div>
   );
 };
