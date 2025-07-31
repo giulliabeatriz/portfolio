@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar/navbar';
+import Navbar from './components/Navbar/navbar.jsx';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Pages/Home';
-import Sobre from './components/Pages/Sobre';
-import Projetos from './components/Pages/Projetos';
-import Contato from './components/Pages/Contato';
+import Home from './components/Pages/Home.jsx';
+import Sobre from './components/Pages/Sobre.jsx';
+import Projetos from './components/Pages/Projetos.jsx';
+import Contato from './components/Pages/Contato.jsx';
 
 function App() {
    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
