@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-4">
 
               <a
-                href="public\documents\CURRICULO Ux - GIULLIA BEATRIZ RAMOS E SILVA .pdf"
+                href="public\documents\CURRICULO Ux - GIULLIA BEATRIZ RAMOS E SILVA  (1).pdf"
                 download
                 className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-base font-heading transition-colors shadow-lg"
               >
