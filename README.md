@@ -54,7 +54,7 @@ Para rodar este projeto no seu ambiente de desenvolvimento, siga os passos abaix
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/giulliabeatriz/seu-repositorio.git](https://github.com/giulliabeatriz/seu-repositorio.git)
+    git clone [https://github.com/giulliabeatriz/portfolio.git](https://github.com/giulliabeatriz/portfolio.git)
     ```
 
 2.  **Navegue até a pasta do projeto:**
