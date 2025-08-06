@@ -1,5 +1,5 @@
 import React from 'react';
-import imgColacao from '../../../public/images/img-colacao.png';
+import imgPremio from '../../../public/images/img-premio.png';
 import TecnologiasSwiper from '../../components/TecnologiasSwiper/TecnologiasSwiper'; // Importe o novo componente
 import './sobre.css';
 
@@ -10,7 +10,7 @@ const Sobre = () => {
 
       <div className="text-lg items-start justify-center text-secondary-dark dark:text-secondary-light">
         <img
-          src={imgColacao}
+          src={imgPremio}
           alt="Giullia Beatriz"
           className="float-left w-1/2 md:w-1/3 mr-6 h-auto shape-image"
         />
