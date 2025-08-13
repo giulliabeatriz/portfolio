@@ -100,7 +100,7 @@ const projetos = [
       { name: 'Vercel', icon: faCloudArrowUp },
     ],
     data: 'Julho de 2025',
-    curiosidade: 'O portfólio já existia, porém apenas no Figma. Em uma noite, sonhei que desenvolvia-o em React. No outro dia, comecei a codar. Em menos de uma semana, havia terminado as partes principais ',
+    curiosidade: 'O portfólio já existia, porém apenas no Figma. Em uma noite, sonhei que desenvolvia-o em React. No outro dia, comecei a codar. Em menos de uma semana, ele estava pronto.',
         imagens: [
       "/images/portfolio/port1.png",
       "/images/portfolio/port2.png",
