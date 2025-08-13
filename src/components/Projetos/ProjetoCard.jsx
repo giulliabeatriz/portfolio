@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./ProjetoCard.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 
 const ProjetoCard = ({
   titulo,
@@ -39,26 +40,40 @@ const ProjetoCard = ({
         <span> {curiosidade}</span>
       </p>
 
-      <p className="text-gray-700 dark:text-gray-300">
-        <strong className="">Tecnologias/Ferramentas:</strong>
-        <span> {tecnologias}</span>
-      </p>
+    <ul className="list-disc list-inside space-y-2">
+       <li className="list-none">
+          <strong className="text-gray-700 dark:text-gray-300">Tecnologias:</strong>
+            <div className="flex justify-center flex-wrap gap-2 mt-2">
+              {Array.isArray(tecnologias) && tecnologias.map((tech) => (
+                <div 
+                  key={tech.name} 
+                  className="flex items-center gap-2 bg-secondary-light dark:bg-secondary-dark rounded-full px-3 py-1"
+                >
+                  <FontAwesomeIcon icon={tech.icon} className="h-4 w-4 text-primary" />
+                  <span className="font-sans text-sm font-medium text-secondary-dark dark:text-secondary-light">
+                    {tech.name}
+                  </span>
+                </div>
+             ))}
+          </div>
+      </li>
+    </ul>
 
       {imagens && imagens.length > 0 && (
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
           pagination={{ clickable: true }}
-          spaceBetween={0}
+          spaceBetween={5}
           slidesPerView={2}
-          className="rounded-xl"
+          className="rounded"
         >
           {imagens.map((src, index) => (
             <SwiperSlide key={index}>
               <img
                 src={src}
                 alt={`Imagem do projeto ${index + 1}`}
-                className="w-full max-h-96 object-contain rounded-xl shadow"
+                className="w-fit max-h-96 object-contain shadow"
               />
             </SwiperSlide>
           ))}
