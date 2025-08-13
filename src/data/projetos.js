@@ -1,5 +1,5 @@
-import { faReact, faJs, faFigma, faGitAlt, faHtml5, faCss3Alt, faCss, faBootstrap, faAccessibleIcon, faW3c, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
-import { faBolt, faCloudArrowUp, faCube, faCubes, faRoute } from '@fortawesome/free-solid-svg-icons';
+import { faReact, faJs, faFigma, faGitAlt, faHtml5, faCss3Alt, faCss, faBootstrap, faAccessibleIcon, faW3c, faFontAwesome, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
+import { faBolt, faBoltLightning, faCloudArrowUp, faCube, faCubes, faRoute } from '@fortawesome/free-solid-svg-icons';
 
 const projetos = [
   { // PROJETO CALCULADORA DO DIFAL 
@@ -25,6 +25,30 @@ const projetos = [
     curiosidade: "A Calculadora do DIFAL foi premiada em 1º lugar no 2º Prêmio de Eficiência e Inovação do Governo de Mato Grosso.",
     link: "https://www.portaldoconhecimento.mt.gov.br/sobre-diferencial-de-aliquotas",
     tituloLink: "Acesse as calculadoras"
+  },
+  // WEATHER APP
+  {
+    titulo: "🌤️ Weather App",
+    objetivo: "Desenvolver uma aplicação que permitisse a busca por informações metereológicas de cidades utilizando API.",
+    descricao:
+      "O Weather App foi um sistema web criado em React (Vite) e foi desenvolvido através da integração com duas APIs, a OpenWeather - que retorna os dados de temperatura, descrição e a umidade, e a GeoDB Cities, que exibe sugestões automáticas para a busca das cidades.",
+    curiosidade: 'A ideia inicial era integrar apenas uma API com os dados metereológicos (OpenWeather), porém, visando melhorar a experiência do usuário na utilização do sistema, inclui a segunda API (GeoDB Cities), que auxilia na sugestão automática das cidades digitadas.',
+    tecnologias: [
+      { name: 'React', icon: faReact }, 
+      { name: 'Vite', icon: faBoltLightning },
+      { name: 'Bootstrap', icon: faBootstrap },
+      { name: 'API GeoDB Cities', icon: faCube },
+      { name: 'API OpenWeather', icon: faCube },
+      { name: 'GitHub', icon: faGithubAlt },
+     ],
+    data: "Junho de 2025",
+    imagens: [
+      "/images/weatherApp/weather1.png",
+      "/images/weatherApp/weather2.png",
+      "/images/weatherApp/weather3.png",
+    ],
+    link: "https://github.com/giulliabeatriz/clima-app",
+    tituloLink: "Acesse o repositório"
   },
 
   // PROJETO VIVENDO DE FREELA 
